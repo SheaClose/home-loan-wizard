@@ -17,99 +17,73 @@ import {
   EMAIL
 } from './action_types';
 
+function actionCreator(payload, type) {
+  return {
+    payload,
+    type
+  };
+}
+
 export function updateLoanType(payload) {
-  return {
-    type: UPDATE_LOAN_TYPE,
-    payload
-  };
+  return actionCreator(payload, UPDATE_LOAN_TYPE);
 }
+
 export function updatePropertyType(payload) {
-  return {
-    type: UPDATE_PROPERTY_TYPE,
-    payload
-  };
+  return actionCreator(payload, UPDATE_PROPERTY_TYPE);
 }
+
 export function updateCity(payload) {
-  return {
-    type: UPDATE_CITY,
-    payload
-  };
+  return actionCreator(payload, UPDATE_CITY);
 }
+
 export function propToBeUsedOn(payload) {
-  return {
-    type: PROP_TO_BE_USED_ON,
-    payload
-  };
+  return actionCreator(payload, PROP_TO_BE_USED_ON);
 }
+
 export function handleFound(payload) {
-  return {
-    type: FOUND,
-    payload
-  };
+  return actionCreator(payload, FOUND);
 }
+
 export function handleRealEstateAgent(payload) {
-  return {
-    type: REAL_ESTATE_AGENT,
-    payload
-  };
+  return actionCreator(payload, REAL_ESTATE_AGENT);
 }
+
 export function updateCost(payload) {
-  return {
-    type: COST,
-    payload
-  };
+  return actionCreator(payload, COST);
 }
+
 export function updateDownPayment(payload) {
-  return {
-    type: DOWN_PAYMENT,
-    payload
-  };
+  return actionCreator(payload, DOWN_PAYMENT);
 }
+
 export function updateCredit(payload) {
-  return {
-    type: CREDIT,
-    payload
-  };
+  return actionCreator(payload, CREDIT);
 }
+
 export function updateHistory(payload) {
-  return {
-    type: HISTORY,
-    payload
-  };
+  return actionCreator(payload, HISTORY);
 }
+
 export function updateAddLineOne(payload) {
-  return {
-    type: LINE_ONE,
-    payload
-  };
+  return actionCreator(payload, LINE_ONE);
 }
+
 export function updateAddLineTwo(payload) {
-  return {
-    type: LINE_TWO,
-    payload
-  };
+  return actionCreator(payload, LINE_TWO);
 }
+
 export function updateAddLineThree(payload) {
-  return {
-    type: LINE_THREE,
-    payload
-  };
+  return actionCreator(payload, LINE_THREE);
 }
+
 export function updateFirst(payload) {
-  return {
-    type: FIRST,
-    payload
-  };
+  return actionCreator(payload, FIRST);
 }
+
 export function updateLast(payload) {
-  return {
-    type: LAST,
-    payload
-  };
+  return actionCreator(payload, LAST);
 }
+
 export function updateEmail(payload) {
-  return {
-    type: EMAIL,
-    payload
-  };
+  return actionCreator(payload, EMAIL);
 }
